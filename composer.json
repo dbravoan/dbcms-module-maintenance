@@ -1,0 +1,25 @@
+{
+    "name": "dbravoan/dbcms-module-maintenance",
+    "type": "dbcms-module",
+    "description": "Control de estado en mantenimiento y página en construcción interactiva con temporizador, bypass para administradores y personalización total.",
+    "license": "MIT",
+    "require": {
+        "dbravoan/dbcms-core": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DbCms\\Modules\\Maintenance\\": "./"
+        }
+    },
+    "extra": {
+        "dbcms": {
+            "name": "Mantenimiento & Construcción",
+            "identifier": "maintenance",
+            "author": "dbCMS Core Team",
+            "description": "Control de estado en mantenimiento y página en construcción interactiva con temporizador, bypass para administradores y personalización total.",
+            "provider": "DbCms\\Modules\\Maintenance\\MaintenanceModuleServiceProvider",
+            "is_pageable": false,
+            "repository": "https://github.com/dbravoan/dbcms-module-maintenance"
+        }
+    }
+}
